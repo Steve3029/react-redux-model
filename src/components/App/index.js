@@ -1,8 +1,9 @@
 import React from 'react'
+import BookList from '../../containers/BookList'
 
 const App = () => {
     return (
-        <h1>Welcom to React World!</h1>
+        <BookList />
     )
 }
 
