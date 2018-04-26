@@ -1,17 +1,21 @@
 import React, { Component } from 'react'
 
 class BookList extends Component {
-  
-  render () {
-    const bookList = this.props.books.map(book => {
+
+  renderBookList () {
+    return this.props.book.map(book => {
       return (
-        <li className="list-group-item"></li>
+        <li key={book.title} className="list-group-item">{book.title}</li>
       )
     })
-
+  }
+  
+  render () {
     return (
-      <div className="col-md-4">
-        <ul className="list-group"></ul>
+      <div className="col-sm-4">
+        <ul className="list-group">
+          {this.renderBookList()}
+        </ul>
       </div>
     )
   }
