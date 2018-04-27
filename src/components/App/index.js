@@ -4,12 +4,12 @@ import BookDetail from '../../containers/BookDetail'
 
 const App = () => {
     return (
-        <div className="container">
-          <div className="row">
-            <BookList />
-            <BookDetail />
-          </div>
+      <div className="container">
+        <div className="row">
+          <BookList />
+          <BookDetail />
         </div>
+      </div>
     )
 }
 
