@@ -1,9 +1,15 @@
 import React from 'react'
 import BookList from '../../containers/BookList'
+import BookDetail from '../../containers/BookDetail'
 
 const App = () => {
     return (
-        <BookList />
+        <div className="container">
+          <div className="row">
+            <BookList />
+            <BookDetail />
+          </div>
+        </div>
     )
 }
 
